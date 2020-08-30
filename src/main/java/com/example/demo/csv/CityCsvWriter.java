@@ -28,7 +28,6 @@ public class CityCsvWriter {
 		mapStrategy.setColumnMapping(columns);
 		bean2Csv = new StatefulBeanToCsvBuilder<City>(writer).withQuotechar(CSVWriter.NO_QUOTE_CHARACTER)
 				.withMappingStrategy(mapStrategy).withSeparator(',').build();
-
 	}
 
 	public CityCsvWriter(OutputStream out) {
